@@ -1,0 +1,25 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 60px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  .header-nav {
+    .nav-list {
+      @include flex(space-between, center, 0px, 0px);
+      .list-item a {
+        font-size: 18px;
+        color: #312e2e;
+        @include Worksans;
+        font-weight: 400;
+        transition: 0.3s linear;
+        &:hover {
+          color: #2f817d;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

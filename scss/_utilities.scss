@@ -1,0 +1,25 @@
+@mixin flex(
+  $justifyContent: flex-start,
+  $alignItems: stretch,
+  $columnGap: "",
+  $rowgap: ""
+) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  column-gap: $columnGap;
+  row-gap: $rowgap;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+@mixin Worksans() {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@mixin SecondFont() {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+}
