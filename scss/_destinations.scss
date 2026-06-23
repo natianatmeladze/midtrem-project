@@ -1,0 +1,42 @@
+.destinations-section {
+  margin: 100px auto;
+  @include flex(center, center, 50px, 80px);
+  flex-direction: column;
+  .destinations-heading {
+    font-size: 50px;
+    @include SecondFont;
+    color: #000000;
+  }
+  .cards {
+    @include flex(space-between, center, 50px, 50px);
+    .destination-card {
+      cursor: pointer;
+      max-width: 230px;
+      min-height: 360px;
+      height: auto;
+      background-color: white;
+      @extend .card-shadow;
+      transition: 0.3s ease-in-out;
+      &:hover{
+        transform: scale(1.05);
+      }
+      .card-text {
+        padding: 10px;
+        @include flex(center, stretch, 10px, 10px);
+        flex-direction: column;
+        .card-city {
+          font-size: 30px;
+          font-weight: 500;
+          @include SecondFont;
+          color: #1b736f;
+        }
+        .card-desc {
+          font-size: 16px;
+          color: black;
+          @include Worksans;
+          opacity: 80%;
+        }
+      }
+    }
+  }
+}
