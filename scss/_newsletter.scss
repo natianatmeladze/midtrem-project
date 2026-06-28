@@ -1,0 +1,46 @@
+.newsletter-section {
+    margin-bottom: 200px;
+    background-color: #ffffff43;
+    padding: 50px 0px;
+    @extend .card-shadow;
+  @include flex(center, center, 30px, 30px);
+  flex-direction: column;
+  h3 {
+    font-size: 60px;
+    color: black;
+    @include SecondFont;
+  }
+  p {
+    font-size: 20px;
+    color: black;
+    @include Worksans;
+  }
+  form {
+    @include flex(center, center, 15px, 15px);
+    flex-direction: column;
+    input {
+      width: 350px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      &:focus {
+        border-color: #0b534f;
+      }
+    }
+    button{
+        border-radius: 20px;
+        color: white;
+        @include Worksans;
+        padding: 10px;
+        font-size: 18px;
+        border: none;
+        background-color: #267672;
+        transition: 0.2s linear;
+        cursor: pointer;
+        &:hover{
+            background-color: #094845;
+        }
+    }
+  }
+}

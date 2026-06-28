@@ -1,0 +1,64 @@
+.activities-section {
+    @include flex(center, center, 80px, 80px);
+    flex-direction: column;
+    margin: 0px auto 250px auto;
+  h2 {
+    font-size: 60px;
+    color: black;
+    font-weight: 500;
+    @include SecondFont;
+    text-align: center;
+  }
+  .activities {
+    @include flex(center, center, 100px, 100px);
+    flex-wrap: wrap;
+    .activity-card {
+        transition: 0.2s linear;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.03);
+        }
+      .activity-img {
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        width: 400px;
+        max-width: 100%;
+        &.camping {
+          background-image: url(../images/camping.png);
+        }
+        &.diving {
+          background-image: url(../images/scuba-diving.png);
+        }
+        &.sailing {
+          background-image: url(../images/sailing.png);
+        }
+        &.hiking {
+          background-image: url(../images/hiking.png);
+        }
+        @extend .card-shadow;
+        position: relative;
+        .activity-text {
+          padding: 10px;
+          width: 300px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: rgba($color: #fff, $alpha: 0.8);
+          h4 {
+            font-size: 25px;
+            @include SecondFont;
+            color: black;
+            font-weight: 300;
+          }
+          p {
+            font-size: 15px;
+            @include Worksans;
+            color: black;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
