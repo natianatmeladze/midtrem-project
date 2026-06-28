@@ -13,7 +13,14 @@
       @include flex(center, flex-start, 100px);
       z-index: 2;
     }
+    .geolab-logo{
+      li a .geolab{
+        width: 70px;
+        height: 70px;
+      }
+    }
     .footer-list {
+
       li {
         margin-bottom: 30px;
         a {
@@ -29,6 +36,7 @@
             font-size: 30px;
             font-weight: 600;
             @include SecondFont;
+
           }
         }
       }

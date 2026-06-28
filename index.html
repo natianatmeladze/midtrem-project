@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Relocate</title>
   </head>
   <body>
@@ -15,13 +16,13 @@
               <img src="./images/relocate.svg" alt="relocate-logo" />
             </a>
           </li>
-          <li class="list-item"><a href="">Home</a></li>
-          <li class="list-item"><a href="">Destinations</a></li>
-          <li class="list-item"><a href="">About</a></li>
-          <li class="list-item"><a href="">Blog</a></li>
-          <li class="list-item"><a href="">Activities</a></li>
-          <li class="list-item"><a href="">Newsletter</a></li>
-          <li class="list-item"><a href="">Contact</a></li>
+          <li class="list-item"><a href="#hero">Home</a></li>
+          <li class="list-item"><a href="#destinations">Destinations</a></li>
+          <li class="list-item"><a href="#aboutus">About</a></li>
+          <li class="list-item"><a href="#blog">Blog</a></li>
+          <li class="list-item"><a href="#activities">Activities</a></li>
+          <li class="list-item"><a href="#newsletter">Newsletter</a></li>
+          <li class="list-item"><a href="#contact">Contact</a></li>
         </ul>
         <div class="burgerbar">
           <img
@@ -32,7 +33,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="hero">
         <div class="hero-img">
           <div class="hero-text">
             <h1 class="hero-heading">Your Dream Vacation Awaits</h1>
@@ -41,7 +42,7 @@
           </div>
         </div>
       </section>
-      <section class="destinations-section container">
+      <section class="destinations-section container" id="destinations">
         <h2 class="destinations-heading">Popular Destinations</h2>
         <div class="cards">
           <div class="destination-card">
@@ -86,8 +87,8 @@
           </div>
         </div>
       </section>
-      <section class="about-us container">
-        <div class="about-us-wrapper">
+      <section class="about-us container" id="aboutus">
+        <div class="about-us-wrapper" data-aos="fade-up">
           <div class="abt-us-img">
             <img src="./images/why-us.avif" alt="abt-us" />
           </div>
@@ -103,10 +104,10 @@
           </div>
         </div>
       </section>
-      <section class="blog-section container">
+      <section class="blog-section container" id="blog">
         <div class="blog-cards">
           <h2 class="blog-text">Read Before You Travel</h2>
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-left">
             <div class="blog-img">
               <img src="./images/blog-img1.png" alt="blog-img" />
             </div>
@@ -119,7 +120,7 @@
               <button class="read-more">Read More</button>
             </div>
           </div>
-          <div class="blog-card">
+          <div class="blog-card" data-aos="fade-right">
             <div class="blog-desc">
               <h3>17 BEST WATERFALLS IN INDONESIA</h3>
               <p>
@@ -134,7 +135,7 @@
           </div>
         </div>
       </section>
-      <section class="activities-section container">
+      <section class="activities-section container" id="activities">
         <h2>Have an Adventure Today</h2>
         <div class="activities">
           <div class="activity-card">
@@ -183,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section class="newsletter-section container">
+      <section class="newsletter-section container" id="newsletter">
         <h3>Join Our Newsletter</h3>
         <p>
           Get travel inspiration and exclusive deals delivered to your inbox.
@@ -205,7 +206,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer-section">
+    <footer class="footer-section" id="contact">
       <div class="footer-img">
         <nav>
           <ul class="footer-list">
@@ -220,14 +221,23 @@
             <li><a href="">Jobs</a></li>
             <li><a href="">Partners</a></li>
           </ul>
-          <ul class="footer-list">
+          <ul class="footer-list geolab-logo">
             <li><a href="">Stay Connected</a></li>
             <li><a href="">Address: 7 holo street</a></li>
-            <li><a href="">Tel: +223344</a></li>
+            <li>
+              <a href="https://geolab.edu.ge/" target="_blank">
+                <img src="./images/geolab-logo.svg" alt="geolab" class="geolab">
+              </a>
+            </li>
           </ul>
         </nav>
         <div class="footer-img-2"></div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 200 });
+    </script>
   </body>
 </html>
