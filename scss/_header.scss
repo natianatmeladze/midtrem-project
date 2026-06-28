@@ -6,7 +6,11 @@ header {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
+
   .header-nav {
+    .burgerbar {
+      display: none;
+    }
     .nav-list {
       @include flex(space-between, center, 0px, 0px);
       .list-item a {

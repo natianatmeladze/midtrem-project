@@ -13,6 +13,7 @@
 .container {
   max-width: 1200px;
   margin: auto;
+  padding: 0px 10px;
 }
 @mixin Worksans() {
   font-family: "Work Sans", sans-serif;
